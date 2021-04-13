@@ -1,0 +1,199 @@
+[
+
+  {
+    "model": "core_banking_system.account",
+    "pk": 1,
+    "fields": {
+      "acct_num": 1200000000001,
+      "acct_type": "S",
+      "hold_pattern": "S",
+      "currency": "INR",
+      "balance": 1000,
+      "min_balance": 0,
+      "create_date": "2018-03-27",
+      "mobile_number": "91247234852",
+      "date_of_birth": "1986-01-01"
+    }
+  },
+  {
+    "model": "core_banking_system.account",
+    "pk": 2,
+    "fields": {
+      "acct_num": 1200000000002,
+      "acct_type": "S",
+      "hold_pattern": "S",
+      "currency": "INR",
+      "balance": 5000,
+      "min_balance": 0,
+      "create_date": "2018-03-27",
+      "mobile_number": "91242378452",
+      "date_of_birth": "1976-01-01"
+    }
+  },
+  {
+    "model": "core_banking_system.account",
+    "pk": 3,
+    "fields": {
+      "acct_num": 1200000000003,
+      "acct_type": "S",
+      "hold_pattern": "S",
+      "currency": "INR",
+      "balance": 12000,
+      "min_balance": 0,
+      "create_date": "2018-03-27",
+      "mobile_number": "9156772343452",
+      "date_of_birth": "1992-01-01"
+    }
+  },
+  {
+    "model": "core_banking_system.account",
+    "pk": 4,
+    "fields": {
+      "acct_num": 1200000000004,
+      "acct_type": "S",
+      "hold_pattern": "S",
+      "currency": "INR",
+      "balance": 20000,
+      "min_balance": 1000,
+      "create_date": "2018-03-27",
+      "mobile_number": "9784377846234",
+      "date_of_birth": "1970-01-01"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 1,
+    "fields": {
+      "account": 1,
+      "trn_date": "2018-03-27",
+      "trn_narration": "Add 100",
+      "trn_ref_no": "1",
+      "trn_amount": 100,
+      "trn_type": "C"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 2,
+    "fields": {
+      "account": 2,
+      "trn_date": "2018-03-28",
+      "trn_narration": "debit 200",
+      "trn_ref_no": "''",
+      "trn_amount": 200,
+      "trn_type": "D"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 3,
+    "fields": {
+      "account": 3,
+      "trn_date": "2018-03-27",
+      "trn_narration": "add 300",
+      "trn_ref_no": "''",
+      "trn_amount": 300,
+      "trn_type": "C"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 4,
+    "fields": {
+      "account": 3,
+      "trn_date": "2018-03-29",
+      "trn_narration": "debit 1000",
+      "trn_ref_no": "'12'",
+      "trn_amount": 1000,
+      "trn_type": "D"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 5,
+    "fields": {
+      "account": 4,
+      "trn_date": "2018-03-27",
+      "trn_narration": "Add 500",
+      "trn_ref_no": "'Cheque 120111'",
+      "trn_amount": 500,
+      "trn_type": "C"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 6,
+    "fields": {
+      "account": 4,
+      "trn_date": "2018-03-28",
+      "trn_narration": "Debit 1500",
+      "trn_ref_no": "''",
+      "trn_amount": 1500,
+      "trn_type": "D"
+    }
+  },
+  {
+    "model": "core_banking_system.transaction",
+    "pk": 7,
+    "fields": {
+      "account": 4,
+      "trn_date": "2018-03-30",
+      "trn_narration": "Debit 800",
+      "trn_ref_no": "''",
+      "trn_amount": 800,
+      "trn_type": "D"
+    }
+  },
+
+  {
+    "model": "auth.User",
+    "pk": 1,
+    "fields": {
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$S0JUUWJLZklTY0J0$qW1HfM+JS2B0SZ8unuMS9A",
+      "last_login": "2018-03-27T17:30:00.770Z",
+      "is_superuser": true,
+      "username": "frescoadmin",
+      "first_name": "",
+      "last_name": "",
+      "email": "fresco.play@tcs.com",
+      "is_staff": true,
+      "is_active": true,
+      "date_joined": "2018-03-27T17:01:58.045Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "auth.User",
+    "pk": 2,
+    "fields": {
+      "password": "argon2$argon2i$v=19$m=512,t=2,p=2$SkE4OElvdEY1ZDBh$U0KbQ1LSRuaizHKz7qrSDg",
+      "last_login": "2018-03-27T17:31:15.508Z",
+      "is_superuser": false,
+      "username": "frescouser1",
+      "first_name": "fresco",
+      "last_name": "playuser1",
+      "email": "fresco.playuser1@tcs.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2018-03-27T17:02:23Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+
+  {
+    "model": "authtoken.token",
+    "pk": "c5f1ba2602850a9082199a96670032e03b0abbec",
+    "fields": {
+      "user": 1,
+      "created": "2018-03-30T10:28:25.693Z"}
+  },
+  {
+    "model": "authtoken.token",
+    "pk": "eb8ccea3c9418b2d792b864acb06133a5a4c2452",
+    "fields": {
+      "user": 2,
+      "created": "2018-03-30T13:14:13.004Z"}
+  }
+]

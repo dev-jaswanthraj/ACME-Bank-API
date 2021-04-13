@@ -1,0 +1,13 @@
+# PRECAUTION: avoid production dependencies that aren't in development
+
+-r base.txt
+
+gevent==1.2.2
+gunicorn==19.7.1  # https://github.com/benoitc/gunicorn
+boto3==1.6.2  # pyup: update minor  # https://github.com/boto/boto3
+Collectfast==0.6.2  # https://github.com/antonagestam/collectfast
+
+# Django
+# ------------------------------------------------------------------------------
+django-storages==1.6.5  # https://github.com/jschneier/django-storages
+django-anymail==2.0  # https://github.com/anymail/django-anymail
